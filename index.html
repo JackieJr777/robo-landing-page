@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top top-header">
+                <div class="top-header__container top-header__container_wide">
+                    <div class="top-header__logo">
+                        <p>ROBO.SCHOOL</p>
+                    </div>
+                    <div class="top-header__menu menu-header">
+                        <nav class="menu-header__body">
+                            <ul class="menu-header__list">
+                                <li class="menu-header__item">
+                                    <a href="#" class="menu-header__link" data-goto=".about">О школе</a>
+                                </li>
+                                <li class="menu-header__item">
+                                    <a href="#" class="menu-header__link" data-goto=".coaches__container">Тренеры</a>
+                                </li>
+                                <li class="menu-header__item">
+                                    <a href="#" class="menu-header__link" data-goto=".content-price__container">Стоимость</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu-header__buttons buttons-header">
+                            <a href="tel:+78000001122" class="buttons-header__btn btn-phone">
+                                <span class="btn-phone__icon">
+                                    <img src="img/header/icons/call.svg" alt="Call">
+                                </span>
+                            </a>
+                            <button class="buttons-header__btn btn-burger">
+                                <span class="btn-burger__icon">
+                                    <span></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="tel:+78000001122" class="top-header__phone">+7 800 000 11 22</a>
+                </div>
+
+            </div>
+            <section class="header__main main-header">
+                <div class="main-header__container main-header__container_wide">
+                    <div class="main-header__container main-header__container_small">
+                        <div class="main-header__content">
+                            <h1 class="main-header__title">ROBO SCHOOL</h1>
+                            <div class="main-header__text">
+                                <p>Курсы повышения квалификации по робототехнике для педагогов начальной школы</p>
+                            </div>
+                            <a href="#!" class="main-header__button button">Записаться на курс</a>
+                        </div>
+                        <div class="main-header__image _ibg">
+                            <img src="img/header/main-header/img.png" alt="Smiling nostalgic female student looking upper left corner holding notebooks">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </header>
+        <main class="mainpage">
+            <section class="mainpage__about about">
+                <div class="about__school school-about">
+                    <div class="school-about__container school-about__container_small">
+                        <div class="school-about__text">
+                            <p><span>Robo School</span> – учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</p>
+                        </div>
+                        <div class="school-about__items">
+                            <div class="school-about__item">
+                                <div class="school-about__value">10</div>
+                                <div class="school-about__desc">УМК по различным направлениям по робототехнике</div>
+                            </div>
+                            <div class="school-about__item">
+                                <div class="school-about__value">20</div>
+                                <div class="school-about__desc">Школ, в которых запущена робототехника</div>
+                            </div>
+                            <div class="school-about__item">
+                                <div class="school-about__value">100</div>
+                                <div class="school-about__desc">Педагогов прошедших курсы повышения квалификации</div>
+                            </div>
+                            <div class="school-about__item">
+                                <div class="school-about__value">10 000</div>
+                                <div class="school-about__desc">Обученных детей на базе собственных центров</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__course course-about">
+                    <div class="course-about__container course-about__container_small">
+                        <h3 class="course-about__title title-small">Что вы получите после курса</h3>
+                        <div class="course-about__items">
+                            <div class="course-about__item">
+                                <div class="course-about__label">Удостоверение</div>
+                                <div class="course-about__text">
+                                    <p>Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+                                </div>
+                            </div>
+                            <div class="course-about__item">
+                                <div class="course-about__label">Знания</div>
+                                <div class="course-about__text">
+                                    <p>По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+                                </div>
+                            </div>
+                            <div class="course-about__item course-about__item_tooltip">
+                                <div class="course-about__header">
+                                    <div class="course-about__label">Практику</div>
+                                    <div class="course-about__tooltip tooltip">
+                                        <button type="button" class="tooltip__btn">
+                                            <img class="tooltip__img" src="img/mainpage/about/course-about/icon-popup.svg" alt="Exclamation point">
+                                        </button>
+                                        <div class="tooltip__text">
+                                            <p>При наличии свободных мест</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-about__text">
+                                    <p>Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mainpage__coaches coaches" id="coaches">
+                <div class="coaches__container coaches__container_small">
+                    <h3 class="coaches__title title-small">Профессиональные тренеры</h3>
+                    <div class="coaches__content">
+                        <div class="coaches__items">
+                            <div class="coaches__item">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/1.jpg" alt="Ирина Лайм">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Ирина Лайм</div>
+                                        <div class="item-coaches__desc">преподаватель по робототехнике</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/2.jpg" alt="Марина Орлова">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Марина Орлова</div>
+                                        <div class="item-coaches__desc">преподаватель по робототехнике</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/3.jpg" alt="Максим Петров">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Максим Петров</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/4.jpg" alt="Константин Назаров">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Константин Назаров</div>
+                                        <div class="item-coaches__desc">преподаватель по робототехнике</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/5.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="coaches__item swiper-slide">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/5.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item swiper-slide">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/5.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item swiper-slide">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/5.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item swiper-slide">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/5.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item swiper-slide">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/5.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item swiper-slide">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/5.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coaches__item swiper-slide">
+                                <div class="item-coaches">
+                                    <a href="#!" class="item-coaches__image _ibg">
+                                        <img src="img/mainpage/coaches/3.jpg" alt="">
+                                    </a>
+                                    <div class="item-coaches__body">
+                                        <div class="item-coaches__name">Лиза Весенняя</div>
+                                        <div class="item-coaches__desc">преподаватель по программированию</div>
+                                        <button class="item-coaches__btn">Подробнее</button>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <button class="button-prev _transform-active">
+                        <img src="img/mainpage/coaches/popup/arrow-left-circle.svg" alt="Arrow left">
+                    </button>
+                    <button class="button-next _transform-active">
+                        <img src="img/mainpage/coaches/popup/arrow-right-circle.svg" alt="Arrow right">
+                    </button>
+                </div>
+                <div class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <a href="#" class="popup__close close-text">Закрыть</a>
+                            <a href="#" class="popup__close close-cross">
+                                <img src="img/mainpage/coaches/popup/close.svg" alt="x">
+                            </a>
+                            <div class="popup__info info-popup">
+                                <div class="info-popup__item">
+                                    <div class="info-popup__image">
+                                        <img src="img/mainpage/coaches/1.jpg" alt="Ирина Лайм">
+                                    </div>
+                                    <div class="info-popup__body">
+                                        <div class="info-popup__name">
+                                            <p>Ирина Лайм</p>
+                                        </div>
+                                        <div class="info-popup__label">
+                                            <p>преподаватель по робототехнике</p>
+                                        </div>
+                                        <div class="info-popup__socials socials-popup">
+                                            <a href="#!" class="socials-popup__item">
+                                                <img src="img/mainpage/coaches/popup/facebook.svg" alt="Facebook">
+                                            </a>
+                                            <a href="#!" class="socials-popup__item">
+                                                <img src="img/mainpage/coaches/popup/instagram.svg" alt="instagram">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup__tabs">
+                                <div class="tabs-popup">
+                                    <div class="tabs-popup__menu menu-tabs">
+                                        <nav class="menu-tabs__body">
+                                            <ul class="menu-tabs__list">
+                                                <li class="menu-tabs__item">
+                                                    <a href="#!" class="menu-tabs__link menu-tabs__link_1 menu-tabs__link_active" data-tab="1">Образование</a>
+                                                </li>
+                                                <li class="menu-tabs__item">
+                                                    <a href="#!" class="menu-tabs__link menu-tabs__link_2" data-tab="2"">Опыт работы</a>
+                                                </li>
+                                                <li class="menu-tabs__item">
+                                                    <a href="#!" class="menu-tabs__link menu-tabs__link_3" data-tab="3"">Награды</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="tabs-popup__main">
+                                        <div class="tabs-popup__content content-tabs">
+                                            <div class="content-tabs__item content-tabs__item_1 content-tabs__item_active">
+                                                <div class="university">
+                                                    <div class="university__title title-itm">
+                                                        <p>Университет</p>
+                                                    </div>
+                                                    <div class="university__items items-itm">
+                                                        <p>Сентябрь 1995 — Июнь 2000</p>
+                                                        <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                                                        <p>Факультет: Компьютерных наук и технологий</p>
+                                                        <p>Специальность: Математика и компьютерные науки</p>
+                                                        <p>Форма обучения: Очная</p>
+                                                    </div>
+                                                </div>
+                                                <div class="courses">
+                                                    <div class="courses__title title-itm">
+                                                        <p>Курсы и тренинги</p>
+                                                    </div>
+                                                    <div class="courses__items items-itm">
+                                                        <div class="courses__item">
+                                                            <p>Ноябрь 2020 — Февраль 2021</p>
+                                                            <p>Программа дополнительного образования «3D Моделирование»</p>
+                                                            <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                                                        </div>
+                                                        <div class="courses__item">
+                                                            <p>Май 2020 — Октябрь 2020</p>
+                                                            <p>Программа дополнительного образования «3D Моделирование»</p>
+                                                            <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-tabs__item content-tabs__item_2">
+                                                <div class="job">
+                                                    <div class="job__title title-itm">
+                                                        <p>Места работы</p>
+                                                    </div>
+                                                    <div class="job__items items-itm">
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat doloremque accusantium praesentium! Repellendus, sed molestias!</p>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus id rerum maiores ipsam! At necessitatibus dignissimos atque exercitationem labore quo dolore expedita possimus delectus numquam.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-tabs__item content-tabs__item_3">
+                                                <div class="awards">
+                                                    <div class="awards__title title-itm">
+                                                        <p>Награды</p>
+                                                    </div>
+                                                    <div class="awards__items items-itm">
+                                                        <p>Lorem</p>
+                                                        <p>Lorem ipsum</p>
+                                                        <p>Lorem ipsum, dolor sit amet</p>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus</p>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus</p>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup__spoiler spoiler-popup">
+                                <div class="spoiler-popup__body">
+                                    <div class="spoiler-popup__item">
+                                        <button class="spoiler-popup__btn">
+                                            <span>Образование</span>
+                                            <img src="img/mainpage/coaches/popup/arrow-down.svg" alt="Стрелочка вниз">
+                                        </button>
+                                        <div class="spoiler-popup__text">
+                                            <div class="university">
+                                                <div class="university__title title-itm">
+                                                    <p>Университет</p>
+                                                </div>
+                                                <div class="university__items items-itm">
+                                                    <p>Сентябрь 1995 — Июнь 2000</p>
+                                                    <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                                                    <p>Факультет: Компьютерных наук и технологий</p>
+                                                    <p>Специальность: Математика и компьютерные науки</p>
+                                                    <p>Форма обучения: Очная</p>
+                                                </div>
+                                            </div>
+                                            <div class="courses">
+                                                <div class="courses__title title-itm">
+                                                    <p>Курсы и тренинги</p>
+                                                </div>
+                                                <div class="courses__items items-itm">
+                                                    <div class="courses__item">
+                                                        <p>Ноябрь 2020 — Февраль 2021</p>
+                                                        <p>Программа дополнительного образования «3D Моделирование»</p>
+                                                        <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                                                    </div>
+                                                    <div class="courses__item">
+                                                        <p>Май 2020 — Октябрь 2020</p>
+                                                        <p>Программа дополнительного образования «3D Моделирование»</p>
+                                                        <p>Место проведения: Институт дополнительного образования «Политех»</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="spoiler-popup__item">
+                                        <button class="spoiler-popup__btn">
+                                            <span>Опыт работы</span>
+                                            <img src="img/mainpage/coaches/popup/arrow-down.svg" alt="Стрелочка вниз">
+                                        </button>
+                                        <div class="spoiler-popup__text">
+                                            <div class="job">
+                                                <div class="job__title title-itm">
+                                                    <p>Места работы</p>
+                                                </div>
+                                                <div class="job__items items-itm">
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat doloremque accusantium praesentium! Repellendus, sed molestias!</p>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus id rerum maiores ipsam! At necessitatibus dignissimos atque exercitationem labore quo dolore expedita possimus delectus numquam.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="spoiler-popup__item">
+                                        <button class="spoiler-popup__btn">
+                                            <span>Награды</span>
+                                            <img src="img/mainpage/coaches/popup/arrow-down.svg" alt="Стрелочка вниз">
+                                        </button>
+                                        <div class="spoiler-popup__text">
+                                            <div class="awards">
+                                                <div class="awards__title title-itm">
+                                                    <p>Награды</p>
+                                                </div>
+                                                <div class="awards__items items-itm">
+                                                    <p>Lorem</p>
+                                                    <p>Lorem ipsum</p>
+                                                    <p>Lorem ipsum, dolor sit amet</p>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+                                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus</p>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus</p>
+                                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mainpage__price price">
+                <div class="price__content content-price ">
+                    <div class="content-price__container content-price__container_small">
+                        <h3 class="content-price__title title-small">Выберите нужный пакет</h3>
+                        <div class="content-price__items">
+                            <div class="content-price__item">
+                                <div class="item-price item-price_bg-black-color-white">
+                                    <div class="item-price__label item-price__label_padding-83">– PRO –</div>
+                                    <div class="item-price__cost">20.000 ₽</div>
+                                    <div class="item-price__desc">
+                                        <p>УМК по робототетхнике и программированию</p>
+                                    </div>
+                                    <a href="#!" class="item-price__button button">Оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="content-price__item">
+                                <div class="item-price">
+                                    <div class="item-price__label">– ROBO –</div>
+                                    <div class="item-price__cost">15.000 ₽</div>
+                                    <div class="item-price__desc">
+                                        <p>УМК по робототетхнике </p>
+                                    </div>
+                                    <a href="#!" class="item-price__button button button_box-shadow-black">Оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="content-price__item">
+                                <div class="item-price">
+                                    <div class="item-price__label">– PROG –</div>
+                                    <div class="item-price__cost">10.000 ₽</div>
+                                    <div class="item-price__desc">
+                                        <p>УМК по программированию</p>
+                                    </div>
+                                    <a href="#!" class="item-price__button button button_box-shadow-black">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__discount discount-price">
+                    <div class="discount-price__container discount-price__container_small">
+                        <div class="discount-price__body">
+                            <div class="discount-price__item">
+                                <div class="content-discount">
+                                    <h3 class="content-discount__title title-small title-small_white">Запишитесь на курс со скидкой 10%</h3>
+                                    <div class="content-discount__label">Акция действительна до 10 марта 2022 года</div>
+                                </div>
+                            </div>
+                            <div class="discount-price__item">
+                                <form action="#" class="form-discount">
+                                    <div class="form-discount__items">
+                                        <div class="form-discount__item">
+                                            <input type="text" name="" value="" placeholder="Имя" class="form-discount__input">
+                                        </div>
+                                        <div class="form-discount__item">
+                                            <input type="tel" name="" value="" placeholder="Телефон" class="form-discount__input">
+                                        </div>
+                                        <div class="form-discount__item">
+                                            <input type="email" name="" value="" placeholder="E-mail" required class="form-discount__input">
+                                        </div>
+                                        <div class="form-discount__item">
+                                            <button type="submit" class="form-discount__button">Оформить заявку</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container footer__container_wide">
+                <div class="footer__items">
+                    <div class="footer__logo">
+                        <p>ROBO.SCHOOL</p>
+                    </div>
+                    <a href="tel:+78000001122" class="footer__phone">+7 800 000 11 22</a> 
+                </div>
+                <div class="footer__copy">
+                    <p>© ROBO.SCHOOL</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

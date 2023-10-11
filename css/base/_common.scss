@@ -1,0 +1,110 @@
+
+// ========================================Общие параметры============================================ 
+/* -----------------------Общие стили--------------------------*/
+/* --------------------Контейнер-------------------- */
+
+[class*="__container"] {
+	margin: 0px auto;
+	padding: 0px 15px; // отступы безопасности 
+}
+
+[class*="__container_wide"] {
+	max-width: $wideContainerWidth; 
+}
+
+[class*="__container_small"] {
+	max-width: $smallContainerWidth; 
+}
+/* ------------------------------------------------- */
+
+/* ----------------------Body----------------------- */
+body {
+	font-family: $fontFamily;
+	font-size: $fontSize; 
+	line-height: 1;
+	color: $mainColor;
+	background-color: $mainBg;
+	// Скролл заблокирован
+	._lock & {
+		overflow: hidden;
+	}
+}
+/* ------------------------------------------------- */
+
+/* --------------Оболочка wrapper------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	//padding: 20px;
+	display: flex;
+	flex-direction: column;
+    // Прибиваем футер к низу, позволив блоку main увеличиваться
+    > main {
+        flex: 1 1 auto;
+    }
+}
+/* ------------------------------------------------- */
+
+/* --------------------ibg-------------------------- */
+[class*="_ibg"] {
+	position: relative;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		// object-position: top;
+	}
+}
+/* ------------------------------------------------- */
+
+
+/* ------------------------------------------------- */
+.button {
+  text-align: center;
+  font-size: clamp(1rem, 0.964rem + 0.13vw, 1.125rem);
+  line-height: 1.6; 
+  padding: 25px 54px;
+  border-radius: 5px;
+  background: #D52027;
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+    &:hover {
+      background-color: #ec3f45;
+			box-shadow: inset 1px 1px 1px white, inset -1px -1px 1px white;
+    }
+  }
+	// .button_box-shadow-black
+	&_box-shadow-black {
+		@media (any-hover: hover) {
+			&:hover {
+				box-shadow: inset 1px 1px 1px #141024, inset -1px -1px 1px #141024;
+			}
+		}
+	}
+}
+/* ------------------------------------------------- */
+
+
+/* ----------------title-small---------------------- */
+.title-small {
+	color: $additionalColor2;
+	font-size: clamp(1.875rem, 1.52rem + 1.34vw, 3.125rem); // от 50px до 30px в промежутке от 1920px до 425px   
+	font-weight: 600;
+	line-height: 1.6; 
+	// .title-small_white
+	&_white {
+		color: $additionalColor1;
+		font-size: clamp(1.875rem, 1.768rem + 0.4vw, 2.25rem);
+	}
+	@media (max-width: 630px) {
+		line-height: 1.4;
+		text-align: center;
+	}
+}
+/* ------------------------------------------------- */
+
+/* -----------------------/Общие стили-------------------------*/
+// =========================================/Общие параметры========================================== 

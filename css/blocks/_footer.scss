@@ -1,0 +1,62 @@
+/* =====================================footer======================================== */
+.footer {
+  background-color: #141024;
+  padding: 40px 0;
+  @media (max-width: 425px) {
+    padding: 25px 0;
+  }
+  // .footer__container
+  &__container {
+    // .footer__container_wide
+    &_wide {
+    }
+  }
+  // .footer__items
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &:not(:last-child) {
+      margin: 0 0 5px;
+    }
+    & > *:not(:last-child) {
+      margin: 0 25px 0 0;
+    }
+    @media (max-width: 425px) {
+      flex-direction: column;
+      align-items: center;
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+      & > *:not(:last-child) {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  // .footer__logo
+  &__logo {
+    color: $additionalColor1;
+    font-size: clamp(1.125rem, 0.912rem + 0.8vw, 1.875rem); // от 30px до 18px на разрешении от 1920px до 425px
+    font-weight: 700;
+    line-height: 1.6; 
+  }
+  // .footer__phone
+  &__phone {
+    color: #FFF;
+    font-size: clamp(1rem, 0.751rem + 0.94vw, 1.875rem); // от 30 до 16 на 1920 до 425
+    font-weight: 600;
+    line-height: 1.6; 
+  }
+  // .footer__copy
+  &__copy {
+    color: #ffffffb3;
+    // text-align: center;
+    font-size: 16px;
+    line-height: 1.6; 
+    @media (max-width: 425px) {
+      text-align: center;
+    }
+  }
+}
+
+/* ===================================/footer========================================= */
